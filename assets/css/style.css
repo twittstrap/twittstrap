@@ -84,7 +84,7 @@ hr.soften {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
-  background: #B3BF26; /* Old browsers */
+  background: #16A085; /* Old browsers */
 }
 .jumbotron h1 {
   font-size: 80px;
@@ -276,8 +276,11 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   padding: 30px 0;
   margin-top: 70px;
   border-top: 1px solid #e5e5e5;
-  background-color: #6e1881;
+  background-color: #004d61;
   color:#FFF;
+}
+.footer a{
+	color:#20BE9E;
 }
 .footer p {
   margin-bottom: 0;

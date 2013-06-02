@@ -22,7 +22,7 @@
   min-height: @navbarHeight;
   padding-left:  20px;
   padding-right: 20px;
-  #gradient > .vertical(@orange, @purple);
+  #gradient > .vertical(@purple, @orange);
   .border-radius(@baseBorderRadius);
 
   // Prevent floats from breaking the navbar
@@ -82,8 +82,8 @@
 .navbar .divider-vertical {
   height: @navbarHeight;
   margin: 0;
-  border-left: 1px  thin @orangeLight;
-  border-right: 1px solid @orangeLight;
+  border-left: 1px  thin @purpleDark;
+  border-right: 1px solid @purpleDark;
 }
 
 // Buttons in navbar
@@ -250,7 +250,7 @@
 // Hover/focus
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  background-color: @purple; // "transparent" is default to differentiate :hover/:focus from .active
+  background-color: darken(@purple,15%); // "transparent" is default to differentiate :hover/:focus from .active
   color: @white;
   text-decoration: none;
 }
@@ -261,7 +261,7 @@
 .navbar .nav > .active > a:focus {
   color: @white;
   text-decoration: none;
-  background-color: @purple;
+  background-color: darken(@purple,15%);
 }
 
 // Navbar button for toggling navbar items in responsive layouts
