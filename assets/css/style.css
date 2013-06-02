@@ -84,13 +84,14 @@ hr.soften {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
-  background: #020031; /* Old browsers */
+  background: #B3BF26; /* Old browsers */
 }
 .jumbotron h1 {
   font-size: 80px;
   font-weight: bold;
   letter-spacing: -1px;
   line-height: 1;
+  color: #fff;
 }
 .jumbotron p {
   font-size: 24px;
@@ -146,7 +147,6 @@ hr.soften {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url(../img/bs-docs-masthead-pattern.png) repeat center center;
   opacity: .4;
 }
 @media
