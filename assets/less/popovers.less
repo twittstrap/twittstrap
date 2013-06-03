@@ -5,6 +5,7 @@
 
 .popover {
   position: absolute;
+  color: @white;
   top: 0;
   left: 0;
   z-index: @zindexPopover;
@@ -18,7 +19,7 @@
           background-clip: padding-box;
   border: 1px solid #ccc;
   border: 1px solid rgba(0,0,0,.2);
-  .border-radius(6px);
+  .border-radius(0);
   .box-shadow(0 5px 10px rgba(0,0,0,.2));
 
   // Overrides for proper insertion
@@ -32,6 +33,7 @@
 }
 
 .popover-title {
+  color: @yellow;
   margin: 0; // reset heading margin
   padding: 8px 14px;
   font-size: 14px;
