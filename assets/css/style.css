@@ -83,8 +83,8 @@ hr.soften {
   padding: 40px 0;
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
-  background: #16A085; /* Old browsers */
+  text-shadow: 0 1px 3px rgba(0,0,0,.04), 0 0 30px rgba(0,0,0,.075);
+  background: #3498db; /* Old browsers */
 }
 .jumbotron h1 {
   font-size: 80px;

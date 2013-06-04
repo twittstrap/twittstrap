@@ -9,10 +9,10 @@
 // Grays
 // -------------------------
 @black:                 #000;
-@grayDarker:            #222;
-@grayDark:              #7b8a8b;
-@gray:                  #95A5A6;
-@grayLight:             #b4bcc2;
+@grayDarker:            #2C3E50;
+@grayDark:              #34495E;
+@gray:                  #7F8C8D;
+@grayLight:             #95A5A6;
 @grayLighter:           #ECF0F1;
 @white:                 #fff;
 
@@ -22,6 +22,7 @@
 @blue:                  #208DBE;
 @blueDark:              #004d61;
 @green:                 #339933;
+@greenDark:				darken(@green,10%);
 @teal:					#00ABA9;
 @red:                   #E51400;
 @yellow:                #e6bb0d;
@@ -47,18 +48,18 @@
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@sansFontFamily:        "Open Sans", Calibri, Candara, Arial, sans-serif;
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-@baseFontSize:          15px;
+@baseFontSize:          14px;
 @baseFontFamily:        @sansFontFamily;
-@baseLineHeight:        21px;
+@baseLineHeight:        20px;
 @altFontFamily:         @serifFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    bold;    // instead of browser default, bold
-@headingsColor:         inherit; // empty to use BS default, @textColor
+@headingsFontWeight:    300;    // instead of browser default, bold
+@headingsColor:         @grayDarker; // empty to use BS default, @textColor
 
 
 // Component sizing
@@ -124,8 +125,8 @@
 // -------------------------
 @dropdownBackground:            @blueDark;
 @dropdownBorder:                rgba(0,0,0,0);
-@dropdownDividerTop:            lighten(@blueDark,15%);
-@dropdownDividerBottom:         lighten(@blue,15%);
+@dropdownDividerTop:            lighten(@blueDark,5%);
+@dropdownDividerBottom:         lighten(@blueDark,5%);
 
 @dropdownLinkColor:             @white;
 @dropdownLinkColorHover:        @white;
@@ -226,9 +227,9 @@
 
 // Hero unit
 // -------------------------
-@heroUnitBackground:              @grayLighter;
-@heroUnitHeadingColor:            inherit;
-@heroUnitLeadColor:               inherit;
+@heroUnitBackground:              @gray;
+@heroUnitHeadingColor:            @white;
+@heroUnitLeadColor:               @white;
 
 
 // Form states and alerts

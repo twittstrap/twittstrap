@@ -519,8 +519,10 @@
   // in these cases the gradient won't cover the background, so we override
   &:hover, &:focus, &:active, &.active, &.disabled, &[disabled] {
     color: @textColor;
-    background-color: @startColor;
-    *background-color: darken(@startColor, 5%);
+	background-image:none;
+    background-color: darken(@startColor, 15%);
+    *background-color: darken(@startColor, 15%);
+	.transition(background-color ease 0.7s);
   }
 
   // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
