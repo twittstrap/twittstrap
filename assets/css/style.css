@@ -509,7 +509,7 @@ h2 + .row {
   line-height: 25px;
 }
 .the-icons i:hover {
-  background-color: rgba(255,0,0,.25);
+  background-color: #208DBE;
 }
 
 /* Example page
@@ -792,7 +792,35 @@ form.bs-docs-example {
   bottom: 270px;
 }
 
+  /** Page icon **/
+  .the-icons .span3 a {
+display: block;
+cursor: pointer;
+line-height: 32px;
+height: 32px;
+padding-left: 10px;
+ }
+.the-icons .span3:hover{
+background-color: #208DBE;
+}
+.the-icons .span3:hover a{
+text-decoration: none;
+background-color: #208DBE;
+color:#FFF;
+}
+.the-icons .span3 a [class^="icon-"], .the-icons .span3 a [class*=" icon-"] {
+width: 32px;
+font-size: 14px;
+display: inline-block;
+text-align: right;
+margin-right: 10px;
 
+}
+.the-icons .span3 a:hover [class^="icon-"]:before, .the-icons .span3 a:hover [class*=" icon-"]:before {
+font-size: 28px;
+vertical-align: -5px;
+}
+/** End page icon **/
 
 
 /* Responsive

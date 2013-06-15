@@ -1,0 +1,57 @@
+
+// icon mixins
+.m-icons-mixin (@size, @margin: 0px) {
+	display: inline-block;
+	width: @size;
+	height: @size; 
+	vertical-align: top;
+	margin: @margin;
+	background-image: url("@{msfticonSpritePath}");
+	background-position: 0 0;
+	background-repeat: no-repeat; 
+}
+
+.button-background (@color, @lightercolor) {
+	border: none;	
+}
+
+.gradient-background-mixin(@firstcolor, @secondColor) {
+	#gradientstyles > .vertical(@firstcolor, @firstcolor);	
+}
+
+#gradientstyles {
+	.vertical(@startColor, @startColor) 
+	{
+		background-color: mix(@startColor, @startColor, 60%);
+		background-image: -moz-linear-gradient(top, @startColor, @startColor); // FF 3.6+
+		background-image: -ms-linear-gradient(top, @startColor, @startColor); // IE10
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), to(@startColor)); // Safari 4+, Chrome 2+
+		background-image: -webkit-linear-gradient(top, @startColor, @startColor); // Safari 5.1+, Chrome 10+
+		background-image: -o-linear-gradient(top, @startColor, @startColor); // Opera 11.10
+		background-image: linear-gradient(top, @startColor, @startColor); // The standard
+		background-repeat: repeat-x;
+		filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@startColor,@startColor)); // IE9 and down
+  	}
+
+}
+
+// Background clipping
+// Heads up: FF 3.6 and under need "padding" instead of "padding-box"
+.background-clip(@clipstyle) {
+  -webkit-background-clip: @clipstyle;
+     -moz-background-clip: @clipstyle;
+          background-clip: @clipstyle;
+}
+
+// Drop shadows
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow;
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+
+// Opacity
+.opacity(@opacity) {
+  opacity: @opacity / 100;
+  filter: ~"alpha(opacity=@{opacity})";
+}
